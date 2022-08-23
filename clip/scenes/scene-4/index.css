@@ -1,0 +1,35 @@
+* {
+    --font-size: {{ initParams.fontSize }};
+    --color: {{ initParams.color }};
+    /* 
+      This is an example of how to use MotorCortex's init params in css, using a css variable
+        if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+    */
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.ball{
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  position: absolute;
+  top: 100%;
+  border-radius: 50%;
+  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.white-ball{
+  background-color: #f7f7f7;
+}
+

@@ -1,8 +1,7 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./index.html";
 import css from "./index.css";
-import { fadeOut } from "../../library/fadeOut";
-import { scaleBig } from "../../library/scaleBig";
+import { Left, Top } from "../../library/incidents";
 
 const clip = new HTMLClip({
   html,
@@ -16,5 +15,10 @@ const clip = new HTMLClip({
     color: "@initParams.color",
   },
 });
+
+clip.addIncident(Top("-100%", ".cercle-1", 1500, "easeInOutCubic"), 5000);
+clip.addIncident(Top("10%", ".cercle-2", 1500, "easeInOutCubic"), 5000);
+clip.addIncident(Top("-10%", ".cercle-3", 1500, "easeInOutCubic"), 5000);
+clip.addIncident(Left("30%", ".cercle-4", 10), 6000);
 
 export default clip;

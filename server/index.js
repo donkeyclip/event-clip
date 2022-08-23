@@ -65,6 +65,7 @@ let timeout = null;
 player = new Player({
   clip,
   ...playerOptions,
+  timeFormat: "ms",
   onMillisecondChange: (ms) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
@@ -89,4 +90,3 @@ if (searchOptions.initParams) {
     }
   }, 100);
 }
-
