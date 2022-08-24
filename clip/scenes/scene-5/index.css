@@ -30,13 +30,13 @@
   color: transparent;
   position: absolute;
   left: 80px;
-  top:550px;
+  top:700px;
   -webkit-text-stroke: 4px var(--color);
 }
 
 .image-wrapper{
   position: absolute;
-  left: 450px;
+  left: 280px;
   background-color: var(--color);
   border-radius: 50%;
 }
@@ -51,9 +51,24 @@
 }
 
 .name-wrapper{
-  position: absolute;
-  left: 900px;
   display: flex;
+  left: 863px;
+  position: absolute;
   text-transform: uppercase;
+  gap: 25px;
 }
 
+.position-wrapper{
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 300;
+  top: 54%;
+  font-size: 44px;
+  left: 873px;
+}
+
+.speech-wrapper{
+  top: 80%;
+  left: 50%;
+  position: absolute;
+}
