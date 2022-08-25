@@ -23,4 +23,13 @@ clip.addIncident(
   Opacity(1, ".sponsor-title,.logo", 800, "@stagger(0, 1000)"),
   1800
 );
+clip.addIncident(Top("-100%", ".root", 1500, "easeInOutCubic"), 5000);
+clip.addIncident(
+  Opacity(0, ".sponsor-title,.logo", 1, "@stagger(0, 1000)"),
+  6500
+);
+clip.addIncident(Top("95%", ".sponsor-wrapper", 1), 6501);
+
+clip.addIncident(Opacity(1, ".logo", 800, "@stagger(0, 1000)"), 14000);
+
 export default clip;

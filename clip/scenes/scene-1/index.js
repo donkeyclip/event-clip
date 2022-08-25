@@ -35,5 +35,15 @@ clip.addIncident(
 
 clip.addIncident(Top("80%", ".cercle-1", 1500, "easeInOutCubic"), 9800);
 clip.addIncident(Top("40%", ".cercle-3", 1500, "easeInOutCubic"), 9800);
+clip.addIncident(
+  Left(
+    "100%",
+    ".cercle-1,.cercle-3,.dot-box",
+    1000,
+    "easeInOutCubic",
+    "@stagger(0, 200)"
+  ),
+  13000
+);
 
 export default clip;

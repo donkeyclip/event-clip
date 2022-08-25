@@ -57,5 +57,14 @@ clip.addIncident(
 
 clip.addIncident(Top("0%", ".speech-wrapper", 800, "easeInOutCubic"), 11000);
 clip.addIncident(Opacity(1, ".speech", 800), 11200);
-
+clip.addIncident(
+  Left(
+    "150%",
+    ".day-name,.day-number-wrapper,.image-wrapper,.position-wrapper, .name-root,.speech-wrapper",
+    1500,
+    "easeInOutCubic",
+    "@stagger(0, 200)"
+  ),
+  13000
+);
 export default clip;
