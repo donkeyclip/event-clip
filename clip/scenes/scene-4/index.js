@@ -12,7 +12,6 @@ const clip = new HTMLClip({
     height: "1080px",
   },
   initParams: {
-    fontSize: "@initParams.fontSize",
     color: "@initParams.color",
   },
 });

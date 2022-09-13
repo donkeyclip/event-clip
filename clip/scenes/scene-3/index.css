@@ -1,5 +1,4 @@
 * {
-    --font-size: {{ initParams.fontSize }};
     --font-color: {{ initParams.color }};
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
@@ -19,7 +18,7 @@
 }
 
 .waves{
-  background-image: url(/assets/waves.svg);
+  background-image: url(https://svgshare.com/i/mSd.svg);
   width: 100%;
   height: 100%;
   z-index: -1;

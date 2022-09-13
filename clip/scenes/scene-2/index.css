@@ -1,5 +1,4 @@
 * {
-    --font-size: {{ initParams.fontSize }};
     --font-color: {{ initParams.color }};
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
@@ -65,15 +64,15 @@
 }
 
 .git{
-  background-image: url(/assets/git.png);
+  background-image: url(https://i.ibb.co/Xj04CGH/git.png);
 }
 
 .intel{
-  background-image: url(/assets/intel.png);
+  background-image: url(https://i.ibb.co/M7fvWY1/intel.png);
 }
 
 .google{
-  background-image: url(/assets/google.png);
+  background-image: url(https://i.ibb.co/1zGTV0n/google.png);
 }
 
 .sponsor-title,.logo{

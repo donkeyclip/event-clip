@@ -5,11 +5,5 @@ export default {
     optional: true,
     default: "white",
   },
-  fontSize: {
-    label: "Font size",
-    type: "measurement",
-    units: ["px"],
-    optional: true,
-    default: "12px",
-  },
+ 
 };

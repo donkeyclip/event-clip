@@ -1,5 +1,4 @@
 * {
-    --font-size: {{ initParams.fontSize }};
     --color: {{ initParams.color }};
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
@@ -64,7 +63,7 @@
 }
 
 .image{
-  background-image: url(/assets/teo.jpg);
+  background-image: url(https://i.ibb.co/M2V3qg0/teo.jpg);
   width: 550px;
   height: 550px;
   border-radius: 50%;
@@ -107,7 +106,7 @@
 .speech-wrapper{
   font-size: 40px;
     width: 300px;
-    background: blue;
+    background: var(--color);
     color: white;
     padding: 60px;
     position: absolute;
