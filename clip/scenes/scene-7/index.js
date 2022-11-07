@@ -13,6 +13,8 @@ const clip = new HTMLClip({
   },
   initParams: {
     color: "@initParams.color",
+    subTitle: "@initParams.subTitle",
+    eventLink: "@initParams.eventLink",
   },
 });
 

@@ -21,6 +21,7 @@ const clip = new HTMLClip({
   },
   initParams: {
     color: "@initParams.color",
+    speeker: "@initParams.speekers[1]",
   },
 });
 

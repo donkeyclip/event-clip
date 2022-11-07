@@ -13,6 +13,9 @@ const clip = new HTMLClip({
   },
   initParams: {
     color: "@initParams.color",
+    title: "@initParams.title",
+    subTitle: "@initParams.subTitle",
+    sponsors: "@initParams.sponsors",
   },
 });
 

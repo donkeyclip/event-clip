@@ -1,9 +1,8 @@
 * {
     --font-color: {{ initParams.color }};
-    /* 
-      This is an example of how to use MotorCortex's init params in css, using a css variable
-        if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
-    */
+    --first-sponsor: url({{initParams.sponsors[0]}});
+    --second-sponsor: url({{initParams.sponsors[1]}});
+    --third-sponsor: url({{initParams.sponsors[2]}});
 }
 
 .root {
@@ -64,15 +63,15 @@
 }
 
 .git{
-  background-image: url(https://i.ibb.co/Xj04CGH/git.png);
+  background-image: var(--first-sponsor);
 }
 
 .intel{
-  background-image: url(https://i.ibb.co/M7fvWY1/intel.png);
+  background-image: var(--second-sponsor);
 }
 
 .google{
-  background-image: url(https://i.ibb.co/1zGTV0n/google.png);
+  background-image: var(--third-sponsor);
 }
 
 .sponsor-title,.logo{

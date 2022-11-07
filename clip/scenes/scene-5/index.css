@@ -1,5 +1,6 @@
 * {
     --color: {{ initParams.color }};
+    --img-url: url({{ initParams.speeker.img }});
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
         if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
@@ -63,7 +64,7 @@
 }
 
 .image{
-  background-image: url(https://i.ibb.co/M2V3qg0/teo.jpg);
+  background-image: var(--img-url);
   width: 550px;
   height: 550px;
   border-radius: 50%;
