@@ -26,6 +26,15 @@ export default {
       type: "string",
     },
   },
+  venue: {
+    type: "object",
+    props: {
+      img: "string",
+      address: "string",
+      building: "string",
+      hall: "string",
+    },
+  },
   speekers: {
     label: "Speekers",
     type: "array",

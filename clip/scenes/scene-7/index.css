@@ -1,5 +1,6 @@
 * {
     --color: {{ initParams.color }};
+    --venue-image: url({{initParams.venue.img}})
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
         if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
@@ -14,42 +15,80 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  font-size: 60px;
+  font-weight: 900;
 }
 
-.text{
-  font-size: 100px;
-    font-weight: 900;
-    position: absolute;
-    text-transform: uppercase;
-    top: 100%;
+.venue-image-wrapper{
+  position: absolute;
+  width: 850px;
+  height: 850px;
+  filter: drop-shadow(1px 0 15px #00000031);
+  background-color: var(--color);
+  border-radius: 100%;
+  overflow: hidden;
+  left:-860px
+}
+
+.venue-image{
+  width: 850px;
+  height: 850px;
+  background: var(--venue-image);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.hall-wrapper{
+  font-weight: 300;
+  font-size: 44px;
+}
+
+.hall-wrapper,.building-wrapper{
+  position: relative;
+  right: -100%;
+}
+
+.address-wrapper{
+  background: var(--color);
+  color: #fff;
+  font-size: 40px;
+  left: 200px;
+  padding: 40px;
+  position: absolute;
+  width: 300px;
+  top: -100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .text-wrapper{
-  overflow: hidden;
-    position: absolute;
-    top: 40%;
-    width: 1184px;
-    height: 100px;
-}
-
-.date-title,.link{
-  font-size: 40px;
-  font-weight: 700;
-  position: relative;
-  top: -100%;
-  opacity: 0;
-}
-
-.date-title-wrapper{
-  overflow: hidden;
+  left: 500px;
   position: absolute;
-  top: 75%;
+  top: 45%;
+  width: 440px;
+  overflow: hidden;
 }
 
-.link{
-  top: 32%;
-  font-weight: 100;
-  opacity: 0;
-  color: black;
-  text-decoration: none;
+.cercle{
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cercle-1{
+  border: 75px solid var(--color);
+  width: 84px;
+  height: 84px;
+  left:-860px;
+  top: 100px;
+}
+.cercle-2{
+  border: 75px solid var(--color);
+  width: 384px;
+  height: 384px;
+  left:-860px;
+  top: 870px;
 }

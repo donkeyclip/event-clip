@@ -6,6 +6,12 @@ export default [
       color: "#0000ff",
       title: "Tech Thess",
       subTitle: "Greece, Thessaloniki Sep 20 - 21 Sep 2022",
+      venue: {
+        img: "https://i.ibb.co/NWmRfGD/venue.jpg",
+        address: "Martiou 25 & Paralia",
+        building: "Thessaloniki Concert Hall M2",
+        hall: "Emilios Riadis Hall",
+      },
       sponsors: [
         "https://i.ibb.co/Xj04CGH/git.png",
         "https://i.ibb.co/M7fvWY1/intel.png",

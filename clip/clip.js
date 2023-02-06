@@ -9,6 +9,7 @@ import scene4 from "./scenes/scene-4";
 import scene5 from "./scenes/scene-5";
 import scene6 from "./scenes/scene-6";
 import scene7 from "./scenes/scene-7";
+import scene8 from "./scenes/scene-8";
 import initParamsValidationRules from "./initParamsValidationRules";
 import { Opacity, Scale, Top } from "./library/incidents";
 
@@ -37,5 +38,6 @@ clip.addIncident(scene4, 0);
 clip.addIncident(scene5, 0);
 clip.addIncident(scene6, 0);
 clip.addIncident(scene7, 0);
+clip.addIncident(scene8, 0);
 clip.addIncident(Opacity(1, ".scene", 300), 1);
 clip.addIncident(Scale(1, ".scene-1", 300), 1);
